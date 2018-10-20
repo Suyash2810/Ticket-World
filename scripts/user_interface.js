@@ -8,6 +8,9 @@ class UserInterface {
     }
 
     selectCategories() {
-        const categoriesList = eventBrite.getCategoriesAPI();
+        const categoriesList = eventbrite.getCategoriesAPI()
+        .then(function(data){
+            console.log(data);
+        });
     }
 }
