@@ -146,3 +146,20 @@ body {
 h2{
     margin-bottom: 60px;
 }
+
+#name_event{
+    background-color: transparent;
+}
+
+#category{
+    background-color: transparent;
+}
+
+#label1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+#form{
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
