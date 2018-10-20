@@ -9,20 +9,21 @@ class UserInterface {
 
     selectCategories() {
         const categoriesList = eventbrite.getCategoriesAPI()
-        .then(function(data){
-            const Data =  data.categoriesData.categories;
-            const categoriesSelect = document.querySelector('#category');
-            
-            Data.forEach(function(Category){
-                const option = document.createElement('option');
-                option.value = Category.id;
-                option.appendChild(document.createTextNode(Category.name));
-                categoriesSelect.appendChild(option);
+            .then(data =>{
+                const Data = data.categoriesData.categories;
+                const categoriesSelect = document.querySelector('#category');
+
+                Data.forEach(function (Category) {
+                    const option = document.createElement('option');
+                    option.value = Category.id;
+
+                    option.appendChild(document.createTextNode(Category.name));
+                    option.style.backgroundColor = '#fff';
+                    categoriesSelect.appendChild(option);
+                })
             })
-        })
-        .catch(function(error)
-              {
-            console.log("Error");
-        });
+            .catch(error => {
+                console.log("Error");
+            });
     }
 }
