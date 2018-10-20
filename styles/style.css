@@ -138,3 +138,11 @@ body {
         font-size: 42px;
     }
 }
+
+.well{
+    background-color: transparent;
+}
+
+h2{
+    margin-bottom: 60px;
+}
