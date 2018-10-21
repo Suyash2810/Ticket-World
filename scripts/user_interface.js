@@ -38,5 +38,11 @@ class UserInterface {
         const searchD = document.querySelector('#searching_events');
         
         searchD.appendChild(div);
+        
+        //Removing the alert message after sometime of display
+        
+        setTimeout(function(){
+            searchD.removeChild(div);
+        },3500);
     }
 }
