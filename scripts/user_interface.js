@@ -5,7 +5,7 @@ class UserInterface {
 
     init() {
         this.selectCategories();
-        
+
         this.result = document.getElementById('result');
     }
 
@@ -13,9 +13,28 @@ class UserInterface {
         let HTMLeventTemplate = '';
 
         events.forEach(eventInformation => {
-            
+            HTMLeventTemplate += `
+                <div class="col-md-4 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="img-fluid mb-2" src="${eventInformation.logo !== null ? eventInformation.logo.url:''}">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h2 class="text-center card-title">${eventInformation.name.text}</h2>
+                                <p class="lead text-info">Event Information :</p>
+                                <p class="text-center">${eventInformation.description.text.substring(0,200)} ...</p>
+                                <span class="badge badge-primary">Capacity: ${eventInformation.capacity}</span>
+                                <span class="badge badge-secondary">Date and Time : ${eventInformation.start.local}</span>
+
+                                <a href="${eventInformation.url}" targets="_blank" class="btn btn-primary btn-block mt-4"> Get tickets </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
         });
-        
+
         this.result.innerHTML = HTMLeventTemplate;
     }
 
