@@ -9,7 +9,7 @@ class UserInterface {
 
     selectCategories() {
         const categoriesList = eventbrite.getCategoriesAPI()
-            .then(data =>{
+            .then(data => {
                 const Data = data.categoriesData.categories;
                 const categoriesSelect = document.querySelector('#category');
 
@@ -26,23 +26,34 @@ class UserInterface {
                 console.log("Error");
             });
     }
-    
-    printErrorMessage(errorMessage,classname){
-        
+
+    printErrorMessage(errorMessage, classname) {
+
         const div = document.createElement('div');
         div.className = classname;
         div.appendChild(document.createTextNode(errorMessage));
-        
+
         //Inserting into the html
-        
+
         const searchD = document.querySelector('#searching_events');
-        
+
         searchD.appendChild(div);
-        
+
         //Removing the alert message after sometime of display
-        
-        setTimeout(function(){
+
+        setTimeout(function () {
             searchD.removeChild(div);
-        },3500);
+            removeAlertClass();
+        }, 3000);
+    }
+
+
+    removeAlertClass() {
+        const alert = document.querySelector('.alert');
+
+        if (alert) {
+            alert.remove();
+
+        }
     }
 }
