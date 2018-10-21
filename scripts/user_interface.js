@@ -26,4 +26,11 @@ class UserInterface {
                 console.log("Error");
             });
     }
+    
+    printErrorMessage(errorMessage,classname){
+        
+        const div = document.createElement('div');
+        div.className = classname;
+        div.appendChild(document.createTextNode(errorMessage));
+    }
 }
