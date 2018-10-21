@@ -5,6 +5,18 @@ class UserInterface {
 
     init() {
         this.selectCategories();
+        
+        this.result = document.getElementById('result');
+    }
+
+    displayEventsList(events) {
+        let HTMLeventTemplate = '';
+
+        events.forEach(eventInformation => {
+            
+        });
+        
+        this.result.innerHTML = HTMLeventTemplate;
     }
 
     selectCategories() {

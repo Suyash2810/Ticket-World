@@ -17,8 +17,10 @@ document.getElementById('submitBtn').addEventListener('click', (e) => {
 
                 if (arrayEventsList.length > 0) {
                     //Printing all the received events.
+                    ui.displayEventsList(arrayEventsList);
                 } else {
-                    
+                    //Printing a message as there are no events found for the selected options.
+                    ui.printErrorMessage('Oops! No results found.', 'alert alert-danger mt-4');
                 }
             })
     } else {
