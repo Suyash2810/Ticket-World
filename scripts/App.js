@@ -11,7 +11,16 @@ document.getElementById('submitBtn').addEventListener('click', (e) => {
 
 
     if (eventName !== '') {
-        eventbrite.queryingAPI(eventName,category_event);
+        eventbrite.queryingAPI(eventName, category_event)
+            .then((datas) => {
+                const arrayEventsList = datas.eventsData.events;
+
+                if (arrayEventsList.length > 0) {
+                    //Printing all the received events.
+                } else {
+                    
+                }
+            })
     } else {
         ui.printErrorMessage('Add an event name or the name of the city.', 'alert alert-danger mt-4');
     }
