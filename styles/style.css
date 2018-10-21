@@ -199,3 +199,11 @@ h2 {
 text-align: center;
     margin-top: 50px;
 }
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+    #displayInformation{
+        margin-left: 80px;
+    }
+
+}

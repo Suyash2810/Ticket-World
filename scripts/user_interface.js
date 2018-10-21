@@ -42,10 +42,10 @@ class UserInterface {
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h3 class="text-center">${eventInformation.name.text}</h3>
-                            <p class="text-center text-info">Event Information :</p>
-                            <p class="text-center">${eventInformation.description.text.substring(0,200)}...</p>
+                        <div class="col-md-10 col-md-offset-1">
+                            <h3 class="text-center" id="displayInformation">${eventInformation.name.text}</h3>
+                            <p class="text-center text-info" id="displayInformation">Event Information :</p>
+                            <p class="text-center" id="displayInformation">${eventInformation.description.text.substring(0,200)}...</p>
                         </div>
                     </div>
                     <div class="row">
