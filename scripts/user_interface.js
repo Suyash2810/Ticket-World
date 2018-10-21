@@ -32,5 +32,11 @@ class UserInterface {
         const div = document.createElement('div');
         div.className = classname;
         div.appendChild(document.createTextNode(errorMessage));
+        
+        //Inserting into the html
+        
+        const searchD = document.querySelector('#searching_events');
+        
+        searchD.appendChild(div);
     }
 }
