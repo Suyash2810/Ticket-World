@@ -5,7 +5,8 @@ const ui = new UserInterface();
 //Event listeners and variables
 
 document.getElementById('submitBtn').addEventListener('click', (e) => {
-
+    const resultwell = document.querySelector('.backimage');
+    resultwell.style.display = 'block';
     const eventName = document.getElementById('name_event').value;
     const category_event = document.getElementById('category').value;
 
