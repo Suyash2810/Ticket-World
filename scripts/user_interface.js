@@ -50,10 +50,10 @@ class UserInterface {
                     </div>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <span class="badge badge-primary">Capacity: ${eventInformation.capacity}</span>
-                            <span class="badge badge-secondary">Date and Time : ${eventInformation.start.local}</span>
+                            <span class="badge badge-primary" id="span1">Capacity: ${eventInformation.capacity}</span>
+                            <span class="badge badge-secondary" id="span2">Date and Time : ${eventInformation.start.local}</span>
                             <br><br>
-                            <a href="${eventInformation.url}" targets="_blank" class="btn btn-primary btn-block mt-4"> Get tickets </a>
+                            <a href="${eventInformation.url}" targets="_blank" class="btn btn-primary btn-block mt-4" id="tickets"> Get tickets </a>
                         </div>
                     </div>
                 </div>`;
