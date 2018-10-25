@@ -182,7 +182,7 @@ h2 {
 }
 
 #label2:hover {
-   color: #ccc;
+    color: #ccc;
 }
 
 #project_head {
@@ -195,28 +195,50 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-#columnCards{
-text-align: center;
+#columnCards {
+    text-align: center;
     margin-top: 50px;
 }
 
 @media only screen and (min-width: 768px) {
+
     /* tablets and desktop */
-    #displayInformation{
+    #displayInformation {
         margin-left: 110px;
     }
-    
-    #span1{
+
+    #span1 {
         margin-left: 80px;
     }
-    
-    #span2{
+
+    #span2 {
         margin-left: 60px;
     }
-    
-    #tickets
-    {
+
+    #tickets {
         margin-left: 50px;
     }
 
+}
+.backimage { 
+    /* The image used */
+    background-image: url("../img/guillaume-le-louarn-788549-unsplash.jpg");
+
+    /* Set a specific height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#displayInformation{
+    color: white;
+    font-family: cursive;
+}
+
+#resultWell{
+    margin-top: 20px;
 }
