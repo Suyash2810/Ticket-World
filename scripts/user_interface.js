@@ -35,7 +35,7 @@ class UserInterface {
 //            `;
             
             HTMLeventTemplate += `                
-                <div class="col-md-4 col-md-offset-1" id="columnCards">
+                <div class="col-md-4 col-md-offset-1" id="columnCards" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <img class="img-fluid mb-2" width="400px" height="200px" src="${eventInformation.logo !== null ? eventInformation.logo.url:''}">
