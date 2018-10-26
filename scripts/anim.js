@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    //Animation of the top - left heading
     var obj = anime({
         targets: '#head_top_left',
         translateX: ['-250px', '0px'],
@@ -15,6 +16,7 @@ $(document).ready(function () {
         scale: [0.5, 1.0]
     });
 
+    //Timeline animation for the two buttons
     var timelineHead = anime.timeline();
 
     timelineHead
@@ -33,17 +35,24 @@ $(document).ready(function () {
             offset: 4000
         });
 
-    var obj = anime({
+    //Animation for the main panel
+    
+    setTimeout(function(){
+           var obj = anime({
         targets: '#Searching_Events',
         scale: {
             value: [0, 1],
             duration: function (el, i, l) {
-                return anime.random(1000, 4000);
+                return anime.random(2500, 4000);
             },
             delay: function (el, i, l) {
                 return 100 * i;
             },
             easing: 'easeInOutSine'
         }
-    })
+    }); 
+    },200);
+
+    
+    
 });
