@@ -23,14 +23,27 @@ $(document).ready(function () {
             translateX: ['-850px', '0px'],
             easing: 'easeOutExpo',
             duration: 4000,
-            delay:500
+            delay: 500
         })
         .add({
             targets: '#clearBtn',
             translateX: ['850px', '0px'],
             easing: 'easeOutExpo',
             duration: 4800,
-        offset:4000
-        })
+            offset: 4000
+        });
 
+    var obj = anime({
+        targets: '#Searching_Events',
+        scale: {
+            value: [0, 1],
+            duration: function (el, i, l) {
+                return anime.random(1000, 4000);
+            },
+            delay: function (el, i, l) {
+                return 100 * i;
+            },
+            easing: 'easeInOutSine'
+        }
+    })
 });
