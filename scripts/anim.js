@@ -32,27 +32,53 @@ $(document).ready(function () {
             translateX: ['850px', '0px'],
             easing: 'easeOutExpo',
             duration: 4800,
-            offset: 4000
+            offset: 3500
         });
 
     //Animation for the main panel
-    
-    setTimeout(function(){
-           var obj = anime({
-        targets: '#Searching_Events',
-        scale: {
-            value: [0, 1],
-            duration: function (el, i, l) {
-                return anime.random(2500, 4000);
-            },
-            delay: function (el, i, l) {
-                return 100 * i;
-            },
-            easing: 'easeInOutSine'
-        }
-    }); 
-    },200);
 
-    
-    
+    setTimeout(function () {
+        var obj1 = anime({
+            targets: '#Searching_Events',
+            scale: {
+                value: [0, 1],
+                duration: function (el, i, l) {
+                    return anime.random(2500, 4000);
+                },
+                delay: function (el, i, l) {
+                    return 100 * i;
+                },
+                easing: 'easeInOutSine'
+            }
+        });
+    }, 200);
+
+    setTimeout(function () {
+        var obj2 = anime({
+            targets: '#project_head',
+            translateY: {
+                value: ['-750px', '0px'],
+                duration: function (el, i, l) {
+                    return 1000 + (100 * i);
+                },
+                delay: function (el, i, l) {
+                    return 100 * i;
+                },
+                easing: 'easeInOutQuart'
+            },
+            scale: {
+                value: [0, 1],
+                duration: function (el, i, l) {
+                    return anime.random(2500, 4000);
+                },
+                delay: function (el, i, l) {
+                    return 100 * i;
+                },
+                easing: 'easeInOutSine'
+            },
+            rotate: '40turn'
+        });
+    }, 500);
+
+
 });
