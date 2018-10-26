@@ -1,7 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
- background-blend-mode: multiply;
+/*    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);*/
 }
 
 .header-nightsky {
@@ -245,4 +244,3 @@ h2 {
 #resultWell{
     margin-top: 20px;
 }
-
