@@ -244,3 +244,24 @@ h2 {
 #resultWell{
     margin-top: 20px;
 }
+
+.footer{
+  padding: 75px 0 65px 0;
+  background: #13171c;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Product Sans', sans-serif;
+}
+
+.author{
+  color: #ffc107;
+  cursor: pointer;
+}
+
+.heart{
+  color: #ffc107;
+}
+
+.cright{
+  font-size: 28px;
+}
