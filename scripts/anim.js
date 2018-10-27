@@ -82,3 +82,14 @@ $(document).ready(function () {
 
 
 });
+
+window.onload = function () {
+    var btn = document.getElementById('clearBtn');
+
+    btn.addEventListener('click', clearfunc);
+
+    function clearfunc() {
+        var EventData = document.getElementById('name_event');
+        EventData.value = '';
+    }
+}
