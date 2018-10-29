@@ -79,5 +79,5 @@ A list of column cards will appear to choose from.
 
 ## License
 
-
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Suyash2810/Ticket-World/blob/master/LICENSE) file for details
 
