@@ -52,26 +52,32 @@ Also one will have to make an account at [Eventbrite](https://www.eventbrite.com
 5. Paste it in the field.  
 ```
 
-
+#### Using the token 
 
 
 ```
-  
+1. Open the same page where you created the new app for your account.
+2. Click on 'Show Client Secret and OAuth Token'.
+3. From the list that appears there'll be an option as 'Your personal OAuth token'.
+4. Copy the toke that has been provided.
+5. Open the project and go to eventBrite.js file.
+6. On line 4, assign the token value to token authentication variable.
+7. Great your work is done here.
 ```
 
 ## Running the program
 
+Open the main index.html file in the source editor and in the field enter the name for which you want to search the event and from the categories available in the dropdown select your respective category.
 
+Click on 'Search' button to search for the following category.
+A list of column cards will appear to choose from.
 
 ### More Information
 
 
-
 ```
 
 ```
-
-
 
 
 ## Authors
