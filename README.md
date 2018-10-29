@@ -72,13 +72,6 @@ Open the main index.html file in the source editor and in the field enter the na
 Click on 'Search' button to search for the following category.
 A list of column cards will appear to choose from.
 
-### More Information
-
-
-```
-
-```
-
 
 ## Authors
 
