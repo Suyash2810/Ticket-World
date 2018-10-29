@@ -265,3 +265,7 @@ h2 {
 .cright{
   font-size: 28px;
 }
+
+#project_head:hover{
+color: #ccc;
+}

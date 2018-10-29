@@ -93,3 +93,26 @@ window.onload = function () {
         EventData.value = '';
     }
 }
+
+const eleHead = document.getElementById('project_head');
+eleHead.addEventListener('mouseover',function(){
+    var animeleHead = anime({
+        targets:'#project_head',
+        scale:[1.0,1.2],
+        translateY:'2px',
+        elasticity:function(el,i,l){
+            return 200 + (200*i);
+        }
+    });
+});
+
+eleHead.addEventListener('mouseout',function(){
+    var animeHead = anime({
+        targets:'#project_head',
+        scale:[1.2,1.0],
+        translateY:'-2px',
+        elasticity:function(el,i,l){
+            return 200 + (200*i);
+        }
+    });
+});
