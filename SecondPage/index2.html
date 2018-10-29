@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Me</title>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../SecondPage/style.css">
 
 
@@ -78,7 +78,7 @@
 
         <ul class="features-list">
 
-            <li class="feature-item">
+            <li class="feature-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
                 <div class="content-col">
                     <div class="title">
                         About Me
@@ -132,7 +132,7 @@
                 </div>
             </li>
 
-            <li class="feature-item">
+            <li class="feature-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
                 <div class="content-col">
                     <div class="title">
                         Academics
@@ -203,7 +203,7 @@
                 </div>
             </li>
 
-            <li class="feature-item">
+            <li class="feature-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
                 <div class="content-col">
                     <div class="title">
                         Skills
@@ -280,6 +280,9 @@
     $('.parallax-color-bar-block').parallaxColorBars();
 
 </script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
