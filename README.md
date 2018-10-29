@@ -35,17 +35,21 @@ Also one will have to make an account at [Eventbrite](https://www.eventbrite.com
 2. Go back to the page opened before and now again click on your sign-in profile. Click on account settings.
 3. On the page opened on the left pane click on App Management.
 4. Now click on Create New App button at the top right corner.
-5. Now fill the necessary information and in the appliaction url follow the steps listed in the next section.
+5. Now fill the necessary information and in the Application URL follow the steps listed in the next section.
 6. Give a name to your application and give a description for why do you want to use it.
 7. After agreeing the terms and conditions click on 'CREATE KEY' option.
 
 ```
 
-
+#### Setting the Application URL
 
 
 ```
-  
+1. Open the project in the source editor.
+2. Go to the main index.html file of the project.
+3. Open the file in browser using the live server of the source code.
+4. Copy the url of the page that has opened in the browser.
+5. Paste it in the field.  
 ```
 
 
